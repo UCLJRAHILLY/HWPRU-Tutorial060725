@@ -27,7 +27,7 @@ schls_data <- read_csv("https://raw.githubusercontent.com/UCLJRAHILLY/HWPRU-Tuto
 # The code below strips everything except digits 
 # and a decimal point.
 
-# We can create a simple function that will convert the daa for us
+# We can create a simple function that will convert the data for us
 # and be reusable/reproducible
 
 clean_numeric <- function(x) as.numeric(gsub("[^0-9.]", "", x))
