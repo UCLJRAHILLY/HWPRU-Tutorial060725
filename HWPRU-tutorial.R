@@ -68,7 +68,7 @@ View(schls_data_amend)
 
 schls_data_amend <- schls_data_amend %>%
   mutate(
-    obesityPrev_z = scale(obesityRate)[,1],
+    obesityPrev_z = scale(obesityRate)[,1], #scale is an inbuilt function that cand o this for you
     IMD_z = scale(Pupil.Index.Of.Multiple.Deprivation.Score)[,1],
     ethnicity1_z = scale(ethnicity1)[,1],
     ethnicity2_z = scale(ethnicity2)[,1]
